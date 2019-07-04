@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/StuSelect/StuSelect",
+    "pages/StuDetail/StuDetail",
+    "pages/StuDefence/StuDefence",
+    "pages/StuInf/StuInf",
+    "pages/StuOpinion/StuOpinion",
+    "pages/StuMidInspection/StuMidInspection",
+    "pages/StuNotice/StuNotice",
+    "pages/StuResult/StuResult",
+    "pages/StuMyInf/StuMyInf",
+    "pages/StuInfDetial/StuInfDetial",
+    "pages/StuSomething/StuSomething",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
