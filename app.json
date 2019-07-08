@@ -16,7 +16,39 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "毕设管理系统",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/StuSelect/StuSelect",
+        "text": "选题",
+        "iconPath": "images/un1.png",
+        "selectedIconPath": "images/1.png"
+      },
+      {
+        "pagePath": "pages/StuDefence/StuDefence",
+        "text": "答辩申请",
+        "iconPath": "images/un2.png",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/StuInf/StuInf",
+        "text": "消息",
+        "iconPath": "images/un3.png",
+        "selectedIconPath": "images/3.png"
+      },
+      {
+        "pagePath": "pages/StuMyInf/StuMyInf",
+        "text": "我的",
+        "iconPath": "images/un4.png",
+        "selectedIconPath": "images/4.png"
+      }
+    ],
+    "color": "#999999",
+    "selectedColor": "#505050",
+    "backgroundColor": "#f6f6f6",
+    "borderStyle": "white"
   }
 }

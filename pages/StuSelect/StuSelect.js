@@ -8,6 +8,14 @@ Page({
 
   },
 
+JumpToDetial:function(){
+wx:wx.navigateTo({
+  url: '../StuDetail/StuDetail',
+  success: function(res) {},
+  fail: function(res) {},
+  complete: function(res) {},
+})
+},
   /**
    * 生命周期函数--监听页面加载
    */

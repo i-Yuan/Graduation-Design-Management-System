@@ -1,1 +1,18 @@
 /* pages/StuInf/StuInf.wxss */
+
+
+.family {
+  float: left;
+  width:320rpx;height: 340rpx;
+  margin:24rpx;
+  text-align: center;
+}
+.family image {
+  width: 300rpx;height:300rpx;
+  border:1px solid #666666;
+  border-radius: 50%;
+}
+.family text {
+  margin-top:10rpx;
+  font-size: 28rpx;
+}

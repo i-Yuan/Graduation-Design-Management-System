@@ -1,2 +1,15 @@
 <!--pages/StuResult/StuResult.wxml-->
-<text>pages/StuResult/StuResult.wxml</text>
+<view class="page">
+  <view class="page_bd">
+    <view class="weui-penel">
+       <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__title weui-media-box__title_in-text">毕设1</view>
+          <view class="weui-media-box__desc">微信小程序：毕业设计管理系统</view>
+          <view class="weui-media-box__info">
+            <view class="weui-media-box__info__meta">导师：XXX</view>
+            <view class="weui-media-box__info__meta">分数：90</view>
+          </view>
+        </view>
+    </view>  
+  </view>
+</view>

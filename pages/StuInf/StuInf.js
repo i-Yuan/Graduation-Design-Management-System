@@ -1,4 +1,4 @@
-// pages/StuInf/StuInf.js
+// pages/StuDetail/StuDetail.js
 Page({
 
   /**
@@ -7,7 +7,26 @@ Page({
   data: {
 
   },
-
+  JumpToOpinion: function () {
+    wx.navigateTo({
+      url: '../StuOpinion/StuOpinion'
+    })
+  },
+  JumpToMid: function () {
+    wx.navigateTo({
+      url: '../StuMidInspection/StuMidInspection'
+    })
+  },
+  JumpToNotice: function () {
+    wx.navigateTo({
+      url: '../StuNotice/StuNotice'
+    })
+  },
+  JumpToResult: function () {
+    wx.navigateTo({
+      url: '../StuResult/StuResult'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

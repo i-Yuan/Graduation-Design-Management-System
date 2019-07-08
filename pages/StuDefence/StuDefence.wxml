@@ -1,2 +1,19 @@
 <!--pages/StuDefence/StuDefence.wxml-->
-<text>pages/StuDefence/StuDefence.wxml</text>
+<view class="page">
+  <view class="page_bd">
+    <view class="weui-penel">
+      <view class="weui-media-box weui-media-box_text">
+        <view class="weui-media-box__title weui-media-box__title_in-text">申请答辩</view>
+        <view class="weui-media-box__desc">答辩开始时间选择(开始时间为8:00 结束时间为21:00)</view>
+        <view class="weui-btn-area">
+          <picker class="weui-btn" mode="time" value="{{time_start}}" start="08:00" end="22:00" bindchange="bindStartTimeChange">
+            <button type="default">预约开始时间</button>
+            <view class="picker">
+              当前选择: {{time_start}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,34 @@
 <!--pages/StuMyInf/StuMyInf.wxml-->
-<text>pages/StuMyInf/StuMyInf.wxml</text>
+<!--pages/mine/mine.wxml-->
+
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 
+  获取头像昵称 </button>
+  <block wx:else>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+
+<view class="block"></view>
+
+<view class="mid" hover-class="mebtn" hover-stay-time="100">
+  <view bindtap="JumpToMyinf" class="font" data-postName="1"> 我的信息
+    <image src="/images/geren.png" class="dui"></image>
+  </view>
+</view>
+
+
+<view class="block"></view>
+
+<view class="mid" hover-class="mebtn" hover-stay-time="100">
+  <view bindtap="JumpToSomething" class="font"> 关于
+    <image src="/images/comment2.png" class="dui"></image>
+  </view>
+</view>
+
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__links">
+  </view>
+  <view class="weui-footer__text">Copyright © 2019-2020 HX</view>
+</view>
