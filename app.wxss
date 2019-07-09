@@ -1,6 +1,7 @@
 /**app.wxss**/
 
 @import 'style/weui.wxss';
+@import 'style/guide.wxss';
 
 .container {
   height: 100%;

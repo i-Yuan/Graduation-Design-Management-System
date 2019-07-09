@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/StuSelect/StuSelect",
     "pages/StuDetail/StuDetail",
     "pages/StuDefence/StuDefence",
@@ -13,11 +13,11 @@
     "pages/StuSomething/StuSomething",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "毕设管理系统",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
@@ -50,5 +50,6 @@
     "selectedColor": "#505050",
     "backgroundColor": "#f6f6f6",
     "borderStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
