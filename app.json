@@ -1,5 +1,6 @@
 {
-  "pages":[
+  "pages": [
+    "pages/index/index",
     "pages/StuSelect/StuSelect",
     "pages/StuDetail/StuDetail",
     "pages/StuDefence/StuDefence",
@@ -13,23 +14,23 @@
     "pages/StuSomething/StuSomething",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "毕设管理系统",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/StuSelect/StuSelect",
-        "text": "选题",
+        "text": "题目信息",
         "iconPath": "images/un1.png",
         "selectedIconPath": "images/1.png"
       },
       {
         "pagePath": "pages/StuDefence/StuDefence",
-        "text": "答辩申请",
+        "text": "进度信息",
         "iconPath": "images/un2.png",
         "selectedIconPath": "images/2.png"
       },
@@ -50,5 +51,6 @@
     "selectedColor": "#505050",
     "backgroundColor": "#f6f6f6",
     "borderStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

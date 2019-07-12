@@ -1,13 +1,14 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">大工毕设管理系统</view>
+    <view class="page__desc">本系统分为三个不同的登录端口，请根据您的身份进入相应的端口。</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="page__bd page__bd_spacing">
+    <navigator url="../StuSelect/StuSelect" open-type="switchTab">
+      <button type="primary" size="default">进入学生端</button>
+    </navigator>
+    <button class="weui-btn" type="primary" bindtap="JumpToTea">进入教师端</button>
+    <button class="weui-btn" type="primary" bindtap="JumpToAdm">进入教务端</button>
   </view>
 </view>

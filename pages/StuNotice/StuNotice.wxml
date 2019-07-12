@@ -3,10 +3,10 @@
   <view class="page_bd">
     <view class="weui-penel">
        <view class="weui-media-box weui-media-box_text">
-          <view class="weui-media-box__title weui-media-box__title_in-text">毕设1</view>
-          <view class="weui-media-box__desc">答辩人：xxx</view>
-          <view class="weui-media-box__desc">开始时间：10：00 </view>
-          <view class="weui-media-box__desc">答辩地点：B201 </view>
+          <view class="weui-media-box__title weui-media-box__title_in-text">{{desName}}</view>
+          <view class="weui-media-box__desc">答辩人：{{StuName}}</view>
+          <view class="weui-media-box__desc">开始时间：{{TimeStrat}} </view>
+          <view class="weui-media-box__desc">答辩地点：{{Classroom}} </view>
         </view>
     </view>  
   </view>
