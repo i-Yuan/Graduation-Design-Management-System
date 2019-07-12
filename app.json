@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/StuSelect/StuSelect",
     "pages/StuDetail/StuDetail",
     "pages/StuDefence/StuDefence",
@@ -23,13 +24,13 @@
     "list": [
       {
         "pagePath": "pages/StuSelect/StuSelect",
-        "text": "选题",
+        "text": "题目信息",
         "iconPath": "images/un1.png",
         "selectedIconPath": "images/1.png"
       },
       {
         "pagePath": "pages/StuDefence/StuDefence",
-        "text": "答辩申请",
+        "text": "进度信息",
         "iconPath": "images/un2.png",
         "selectedIconPath": "images/2.png"
       },
