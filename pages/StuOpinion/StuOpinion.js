@@ -13,7 +13,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const db = wx.cloud.database()
+    db.collection('gp').where({
+      gpstate: 'N'
+    }).get({
+      success: res => {
+        this.setData({
+          list: res.data,
+        })
+        console.log(res.data)
+      },
+      fail: err => {
+        wx.showToast({
+          icon: 'none',
+          title: '查询记录失败'
+        })
+        console.error('[数据库] [查询记录] 失败：', err)
+      }
+    })
   },
 
   /**

@@ -3,11 +3,11 @@
   <view class="page_bd">
     <view class="weui-penel">
        <view class="weui-media-box weui-media-box_text">
-          <view class="weui-media-box__title weui-media-box__title_in-text">{{desName}}</view>
+          <view class="weui-media-box__title weui-media-box__title_in-text">{{item.gpname}}</view>
           <view class="weui-media-box__desc"><text>{{list.text}}</text></view>
           <button class="weui-btn" type="flase" size="mini">打印任务书</button>
           <view class="weui-media-box__info">
-            <view class="weui-media-box__info__meta">导师：{{TeaName}}</view>
+            <view class="weui-media-box__info__meta">导师：{{item.tea}}</view>
           </view>
         </view>
     </view>  

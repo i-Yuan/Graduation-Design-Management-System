@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/register/register",
+    "pages/init/init",
     "pages/StuSelect/StuSelect",
     "pages/StuDetail/StuDetail",
     "pages/StuDefence/StuDefence",
