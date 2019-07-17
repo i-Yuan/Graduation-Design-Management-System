@@ -5,6 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    list:null,
+    gpname:null,
+    sname:null
 
   },
 
@@ -12,9 +15,47 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const id = options.id
+    const db = wx.cloud.database()
+    db.collection('gp').where({
+      _id: id
+    }).get({
+      success: res => {
+        this.setData({
+          list: res.data[0],
+          gpname:res.data[0].gpname
+        })
+        console.log('test', res)
+      },
+      fail: err => {
+        wx.showToast({
+          icon: 'none',
+          title: '查询记录失败'
+        })
+        console.error('[数据库] [查询记录] 失败：', err)
+      }
+    })
   },
-
+  allow: function (event) {
+    const db = wx.cloud.database()
+    const order_id = event.currentTarget.id
+    db.collection('afgp').add({
+      data: {
+        gpname:this.data.gpname,
+        state:"0"
+      },
+      success: res => { this.refresh() },
+      fail: err => {
+        icon: 'none',
+          console.error('[数据库] [更新记录] 失败：', err)
+      }
+    })
+  },
+  order: function () {
+    wx.redirectTo({
+      url: '../StuSelect/StuSelect',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

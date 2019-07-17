@@ -10,12 +10,12 @@
     </view>
   </view>
     <view class='item'>
-      <text class='left'>学号：</text><text class='right'>{{StuID}}</text>
+      <text class='left'>学号：</text><text class='right'>{{list._id}}</text>
     </view>
     <view class='item'>
-      <text class='left'>姓名：</text><text class='right'>{{StuName}}</text>
+      <text class='left'>姓名：</text><text class='right'>{{list.sname}}</text>
     </view>
     <view class='item'>
-     <text class='left'> 电话：</text><text class='right'>{{StuPhone}}</text>
+     <text class='left'> 电话：</text><text class='right'>{{list.tel}}</text>
     </view>
 </view>

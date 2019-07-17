@@ -3,24 +3,14 @@
   <view class="page_bad">
     <view class="weui-panel">
       <view class="weui-panel__bd">
-
-        <view class="weui-media-box weui-media-box_text">
-          <view class="weui-media-box__title weui-media-box__title_in-text">毕设1</view>
+        <view class="weui-media-box weui-media-box_text" wx:for="{{list}}" wx:key="_id">
+          <view class="weui-media-box__title weui-media-box__title_in-text" id="{{item._id}}">{{item.gpname}}</view>
           <view class="weui-media-box__info">
-            <view class="weui-media-box__info__meta">导师：XXX</view>
+            <view class="weui-media-box__info__meta " id="{{item._id}}">导师：{{item.tea}}</view>
           </view>
-          <button class="weui-btn mini-btn" type="default" size="mini" bindtap="JumpToDetial">查看详细信息</button>
-        </view>
-
-        <view class="weui-media-box weui-media-box_text" wx:for="{{list}}" wx:key="{{desName}}">
-          <view class="weui-media-box__title weui-media-box__title_in-text">{{item.desName}}</view>
-          <view class="weui-media-box__info">
-            <view class="weui-media-box__info__meta">导师：{{item.TeaName}}</view>
-          </view>
-          <button class="weui-btn mini-btn" type="default" size="mini" bindtap="JumpToDetial">查看详细信息</button>
+          <button class="weui-btn mini-btn" type="default" size="mini" id="{{item._id}}" bindtap="JumpToDetial">查看详细信息</button>
         </view>
       </view>
     </view>
   </view>
-
 </view>

@@ -3,12 +3,12 @@
   <view class="page_bd">
     <view class="weui-penel">
        <view class="weui-media-box weui-media-box_text">
-          <view class="weui-media-box__title weui-media-box__title_in-text">{{desName}}</view>
+          <view class="weui-media-box__title weui-media-box__title_in-text">{{list.gpname}}</view>
           <view class="weui-media-box__desc">微信小程序：毕业设计管理系统</view>
           <view class="weui-media-box__info">
-            <view class="weui-media-box__info__meta">导师：{{TeaName}}</view>
+            <view class="weui-media-box__info__meta">导师：{{list.tea}}</view>
           </view>
-          <button class="weui-btn" type="float" size="mini">选择此题目</button>
+          <button class="weui-btn" type="float" size="mini" bindtap="allow" bindtap='order'>选择此题目</button>
         </view>
     </view>  
   </view>

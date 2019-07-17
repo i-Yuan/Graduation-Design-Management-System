@@ -6,10 +6,10 @@
         <view class="weui-media-box__title weui-media-box__title_in-text">申请答辩</view>
         <view class="weui-media-box__desc">答辩开始时间选择(开始时间为8:00 结束时间为21:00)</view>
         <view class="weui-btn-area">
-          <picker class="weui-btn" mode="time" value="{{time_start}}" start="08:00" end="22:00" bindchange="bindStartTimeChange">
+          <picker class="weui-btn" mode="time" value="{{finaltime}}" start="08:00" end="22:00" bindchange="bindStartTimeChange">
             <button type="default">预约开始时间</button>
             <view class="picker">
-              当前选择: {{time_start}}
+              当前选择: {{finaltime}}
             </view>
           </picker>
         </view>

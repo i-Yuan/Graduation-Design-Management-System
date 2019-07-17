@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    list:null
 
   },
 
@@ -12,7 +13,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const id = options.id
+    const db = wx.cloud.database()
+    db.collection('stu').where({
+     _id:id
+    }).get({
+      success: res => {
+        this.setData({
+          list: res.data[0]
+        })
+        console.log('test', res)
+      },
+      fail: err => {
+        wx.showToast({
+          icon: 'none',
+          title: '查询记录失败'
+        })
+        console.error('[数据库] [查询记录] 失败：', err)
+      }
+    })
   },
 
   /**
